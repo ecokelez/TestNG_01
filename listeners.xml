@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd" >
+<suite name="All Test Suite">
+    <!-- Listeners'lari Test Class'lara baglamak icin kullanilir -->
+    <listeners>
+        <!-- Listeners Utilities Class path'i -->
+        <listener class-name="utilities.Listeners"/>
+    </listeners>
+        <test verbose="2" preserve-order="true"
+              name="C:\SeleniumBatch81\com.Batch81TestNG_01\src\test\java\tests\listeners\ListenersTest01.java">
+    <!-- test class Absolute path'i -->
+        <classes>
+            <!-- test class (copy referance) path'i -->
+            <class name="tests.day20_smokeTest.C02_SmokeNegatifLoginTest"/>
+        </classes>
+    </test>
+</suite>

@@ -21,7 +21,7 @@ public class C03_E2ETest {
 
     @Test
     public void E2ETest() {
-        //3. https://www.hotelmycamp.com adresine git.
+        //            3. https://www.hotelmycamp.com adresine git.
         //            4. Username textbox ve password metin kutularını locate edin ve asagidaki verileri girin.
         //            a. Username : manager
         //            b. Password : Manager1!

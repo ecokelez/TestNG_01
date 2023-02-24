@@ -25,7 +25,6 @@ public class C02_WindowHandlesReusableMethod {
         //      Acilan yeni tab'in title'inin "New Window" oldugunu test edin
         ArrayList<String> pencereler = new ArrayList<>(Driver.getDriver().getWindowHandles());
         Driver.getDriver().switchTo().window(pencereler.get(1));
-
         String expectedTitle = "New Window";
         String actualTitle = Driver.getDriver().getTitle();
         Assert.assertEquals(expectedTitle,actualTitle);

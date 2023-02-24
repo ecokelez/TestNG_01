@@ -10,16 +10,16 @@ import java.io.IOException;
 import java.text.SimpleDateFormat;
 import java.util.Date;
 public abstract class TestBaseRapor {
-    protected static ExtentReports extentReports; //extent report'a ilk atamayi yapar
+   protected static ExtentReports extentReports; //extent report'a ilk atamayi yapar
     protected static ExtentTest extentTest;
     // test pass veya failed gibi bilgileri kaydeder. Ayrica ekran resmi icin de kullaniriz
     protected static ExtentHtmlReporter extentHtmlReporter; // Html raporu duzenler
     // Test işlemine başlamadan hemen önce (test methodundan önce değil, tüm test işleminden önce)
     @BeforeTest(alwaysRun = true) //alwaysRun : her zaman çalıştır.
-    public void setUpTest() {
+    public  void setUpTest(String testerName, String testName) {
         extentReports = new ExtentReports(); // Raporlamayi baslatir
         //rapor oluştuktan sonra raporunuz nereye eklensin istiyorsanız buraya yazıyorsunuz.
-        String date = new SimpleDateFormat("yyyyMMddhhmmss").format(new Date());// Üstüste oluşturmasın diye
+        String date = new SimpleDateFormat("yyyy-MM-dd-hh-mm-ss").format(new Date());// Üstüste oluşturmasın diye
         String filePath = System.getProperty("user.dir") + "/target/Rapor/rapor"+date+".html";
         //oluşturmak istediğimiz raporu (html formatında) başlatıyoruz, filePath ile dosya yolunu belirliyoruz.
         extentHtmlReporter = new ExtentHtmlReporter(filePath);
@@ -33,7 +33,7 @@ public abstract class TestBaseRapor {
     }
     // Her test methodundan sonra eğer testte hata varsa, ekran görüntüsü alıp rapora ekliyor
     @AfterMethod(alwaysRun = true) //Her test methodundan sonra çalışır
-    public void tearDownMethod(ITestResult result) throws IOException {
+    public  void tearDownMethod(ITestResult result) throws IOException {
         if (result.getStatus() == ITestResult.FAILURE) { // eğer testin sonucu başarısızsa
             String screenshotLocation = ReusableMethods.getScreenshot(result.getName());
             extentTest.fail(result.getName());

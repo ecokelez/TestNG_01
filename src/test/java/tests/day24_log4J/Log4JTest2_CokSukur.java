@@ -15,5 +15,6 @@ public class Log4JTest2_CokSukur {
         logger.fatal("LOG FATAL");
         logger.warn("LOG WARN");
 
+
     }
 }

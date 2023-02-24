@@ -9,10 +9,16 @@ public class Log4jTest1 {
 
     @Test
     public void log4jTest1() {
+        // info : bilig vermek icin kullanilir
+        System.out.println("LOG INFO");
         logger.info("LOG INFO");
+        System.out.println("LOG DEBUG HATA");
         logger.debug("LOG DEBUG");
+        System.out.println("LOG DEBUG HATA");
         logger.error("LOG ERROR");
+        System.out.println("LOG DEBUG HATA");
         logger.fatal("LOG FATAL");
+        System.out.println("LOG DEBUG HATA");
         logger.warn("LOG WARN");
     }
 }

@@ -5,7 +5,6 @@ import org.openqa.selenium.Keys;
 import org.openqa.selenium.WebElement;
 import org.testng.Assert;
 import org.testng.annotations.Test;
-import org.testng.asserts.SoftAssert;
 import utilities.TestBase_BeforeMethodAfterMethod;
 
 public class C01_HardAssertions extends TestBase_BeforeMethodAfterMethod {

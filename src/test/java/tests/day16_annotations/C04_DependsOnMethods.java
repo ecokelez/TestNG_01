@@ -6,7 +6,6 @@ import org.openqa.selenium.WebElement;
 import org.testng.Assert;
 import org.testng.annotations.Test;
 import utilities.TestBase_BeforeClassAfterClass;
-import utilities.TestBase_BeforeMethodAfterMethod;
 
 public class C04_DependsOnMethods extends TestBase_BeforeClassAfterClass {
 

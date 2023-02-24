@@ -5,7 +5,6 @@ import org.apache.logging.log4j.Logger;
 import org.openqa.selenium.Keys;
 import org.testng.annotations.Test;
 import pages.AmazonPage;
-import tests.day24_log4J.Log4JTest2_CokSukur;
 import utilities.ConfigReader;
 import utilities.Driver;
 import utilities.ReusableMethods;
@@ -28,6 +27,7 @@ public class C01_ScreenShotReusableMethod {
         //Sayfayı kapatınız
         logger.warn("Driver kapatilir");
         Driver.closeDriver();
+
 
     }
 

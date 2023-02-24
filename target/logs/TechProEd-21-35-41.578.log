@@ -1,0 +1,1 @@
+2023-02-23 21:35:41,568 INFO t.d.Log4JTest2_CokSukur [main] LOG INFOn2023-02-23 21:35:41,579 ERROR t.d.Log4JTest2_CokSukur [main] LOG ERRORn2023-02-23 21:35:41,580 FATAL t.d.Log4JTest2_CokSukur [main] LOG FATALn2023-02-23 21:35:41,580 WARN t.d.Log4JTest2_CokSukur [main] LOG WARNn
